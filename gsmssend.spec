@@ -55,14 +55,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %find_lang %{name}
 
-gzip -9nf ChangeLog README NEWS TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc ChangeLog README NEWS TODO
 %attr(755,root,root) %{_bindir}/gsmssend
 %{_applnkdir}/Network/Misc/gsmssend.desktop
 %{_pixmapsdir}/*
