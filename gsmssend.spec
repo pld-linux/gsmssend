@@ -1,17 +1,21 @@
 Summary:	GNOME user interface for SmsSend
+Summary(pl):	Interfejs u¿ytkownika dla GNOME do SmsSend
 Name:		gsmssend
 Version:	1.1
 Release:	1
 License:	GPL
+Vendor:		Eric Lassauge <lassauge@mail.dotcom.fr>
 Group:		X11/Applications
 Group(de):	X11/Applikationen
+Group(es):	X11/Aplicaciones
 Group(pl):	X11/Aplikacje
-Vendor:		Eric Lassauge <lassauge@mail.dotcom.fr>
+Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Source0:	http://lassauge.free.fr/smssend/%{name}-%{version}.tar.gz
-BuildRequires:	SmsSend >= 2.1
+URL:		http://lassauge.free.fr/linux.html
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel >= 1.2.8
-URL:		http://lassauge.free.fr/linux.html
+BuildRequires:	smssend >= 2.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
@@ -20,13 +24,24 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GNOME-SmsSend is a gnome UI to the smssend tools written by Christophe
 CALMEJANE 'Ze KiLleR / SkyTech'
-http://zekiller.skytech.org/smssend_menu_en.html
+http://zekiller.skytech.org/smssend_menu_en.html .
 
 It will detect the provider script files in the default locations
 (current dir, ~/.smssend, and smssend default global) and create a
 small UI for each one. When you click on the APPLY button it will
 fork/exec smssend with proper options. All options to smssend can be
 set through the preference dialog.
+
+%description -l pl
+GNOME-SmsSend to gnomowy interfejs u¿ytkownika do narzêdzi smssend
+napisanych przez Christophe'a Calmejane'a (KiLleR/SkyTech) -
+http://zekiller.skytech.org/smssend_menu_en.html .
+
+Ten program znajduje skrypty w standardowych miejscach (aktualny
+katalog, ~/.smssend, globalna konfiguracja smssend) i tworzy ma³y
+interfejs u¿ytkownika do ka¿dego z nich. Po naci¶niêciu przycisku
+APPLY uruchamia smssend z odpowiednimi opcjami. Wszystkie opcje
+smssend mog± byæ ustawione w okienku z opcjami.
 
 %prep
 %setup -q
@@ -46,6 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %find_lang %{name}
 
 gzip -9nf ChangeLog README NEWS TODO
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
