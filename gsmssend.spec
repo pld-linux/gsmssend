@@ -7,6 +7,7 @@ License:	GPL
 Vendor:		Eric Lassauge <lassauge@mail.dotcom.fr>
 Group:		X11/Applications
 Source0:	http://lassauge.free.fr/smssend/%{name}-%{version}.tar.gz
+# Source0-md5:	fd58dca0b7d89e37fbda41d4a4d09e81
 URL:		http://lassauge.free.fr/linux.html
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel >= 1.2.8
