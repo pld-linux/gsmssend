@@ -13,8 +13,6 @@ BuildRequires:	gtk+-devel >= 1.2.8
 BuildRequires:	smssend >= 2.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 GNOME-SmsSend is a gnome UI to the smssend tools written by Christophe
