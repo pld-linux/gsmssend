@@ -52,5 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/gsmssend
 %{_applnkdir}/Network/Misc/gsmssend.desktop
-%{_datadir}/pixmaps/*
+%{_pixmapsdir}/*
 %{_mandir}/man1/gsmssend.*
