@@ -3,7 +3,9 @@ Name:		gsmssend
 Version:	1.1
 Release:	1
 License:	GPL
-Group:		X11/Applications/Network
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(pl):	X11/Aplikacje
 Vendor:		Eric Lassauge <lassauge@mail.dotcom.fr>
 Source0:	http://lassauge.free.fr/smssend/%{name}-%{version}.tar.gz
 BuildRequires:	SmsSend >= 2.1
