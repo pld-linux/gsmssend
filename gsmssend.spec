@@ -42,7 +42,7 @@ smssend mog± byæ ustawione w okienku z opcjami.
 %setup -q
 
 %build
-gettextize --copy --force
+%{__gettextize}
 %configure
 %{__make}
 
