@@ -1,5 +1,5 @@
 Summary:	GNOME user interface for SmsSend
-Summary(pl):	Interfejs u¿ytkownika dla GNOME do SmsSend
+Summary(pl.UTF-8):   Interfejs uÅ¼ytkownika dla GNOME do SmsSend
 Name:		gsmssend
 Version:	1.1
 Release:	1
@@ -26,16 +26,16 @@ small UI for each one. When you click on the APPLY button it will
 fork/exec smssend with proper options. All options to smssend can be
 set through the preference dialog.
 
-%description -l pl
-GNOME-SmsSend to gnomowy interfejs u¿ytkownika do narzêdzi smssend
+%description -l pl.UTF-8
+GNOME-SmsSend to gnomowy interfejs uÅ¼ytkownika do narzÄ™dzi smssend
 napisanych przez Christophe'a Calmejane'a (KiLleR/SkyTech) -
 http://zekiller.skytech.org/smssend_menu_en.html .
 
 Ten program znajduje skrypty w standardowych miejscach (aktualny
-katalog, ~/.smssend, globalna konfiguracja smssend) i tworzy ma³y
-interfejs u¿ytkownika do ka¿dego z nich. Po naci¶niêciu przycisku
+katalog, ~/.smssend, globalna konfiguracja smssend) i tworzy maÅ‚y
+interfejs uÅ¼ytkownika do kaÅ¼dego z nich. Po naciÅ›niÄ™ciu przycisku
 APPLY uruchamia smssend z odpowiednimi opcjami. Wszystkie opcje
-smssend mog± byæ ustawione w okienku z opcjami.
+smssend mogÄ… byÄ‡ ustawione w okienku z opcjami.
 
 %prep
 %setup -q
