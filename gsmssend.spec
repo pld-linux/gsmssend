@@ -1,5 +1,5 @@
 Summary:	GNOME user interface for SmsSend
-Summary(pl.UTF-8):   Interfejs użytkownika dla GNOME do SmsSend
+Summary(pl.UTF-8):	Interfejs użytkownika dla GNOME do SmsSend
 Name:		gsmssend
 Version:	1.1
 Release:	1
